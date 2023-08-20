@@ -33,11 +33,11 @@
 
 <body>
 
-    <header class="h-96" id="header">
-        <section class="grid grid-rows-1 lg:grid-cols-2 max-w-2xl mx-auto text-center justify-center pt-20">
+    <header class="min-h-min" id="header">
+        <section class="grid grid-rows-1 max-w-xl md:grid-cols-2 lg:max-w-2xl mx-auto text-center justify-center pt-20">
             <div class="text-center">
                 <h2 class="text-xl font-sans font-semibold">---SALE FEVER---</h2>
-                <h1 class="text-3xl mt-6 font-sans font-bold">Purchase TK 200 or<br>above & get <span
+                <h1 class="text-2xl lg:text-3xl mt-6 font-sans font-bold">Purchase TK 200 or<br>above & get <span
                         class="text-pink-500 text-3xl font-sans font-bold">20%
                         off</span></h1>
 
@@ -56,66 +56,134 @@
     </header>
 
     <!-- header section end -->
+
+    
     <main class="main-bg">
         <!-- Product sectio  start -->
-        <div class="max-w-5xl mx-auto pt-32">
-            <h1 class="text-black font-sans font-semibold text-2xl mb-6">Kitchenware</h1>
+        <div class="max-w-3xl md:px-5 lg:max-w-5xl mx-auto pt-20 lg:pt-32">
+            <h1 class="text-black font-sans font-semibold text-2xl mb-6 text-center md:text-left">Kitchenware</h1>
 
         </div>
-        <section class="max-w-5xl mx-auto  flex">
+        <section class="max-w-5xl mx-auto lg:flex md:px-5 md:flex lg:flex-row ">
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 justify-center gap-4">
+            <div class="grid  md:grid-cols-2 lg:grid-cols-3 justify-center gap-4">
+
                 <!-- product card 1 -->
-                <div class="card bg-base-100 shadow-md rounded-md w-56" onclick="productOnePriceAndTitle()">
-                    <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40 ">
-                        <figure><img src="./images/prod1.png" alt="Shoes" /></figure>
+                
+                <div>
+                    <div class="card bg-base-100 shadow-md rounded-md w-56" onclick="productPriceAndTitle(this)">
+                        <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40 ">
+                            <figure><img src="./images/prod1.png" alt="Shoes" /></figure>
+                        </div>
+                        <h2 class="text-center mt-2 font-sans font-semibold" id="product-one-title">K. Accessories</h2>
+                        <div class="text-center text-yellow-500 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="text-slate-400 text-sm text-center pb-2  "><span id="product-one-price">39.00</span>Tk</p>
                     </div>
-                    <h2 class="text-center mt-2 font-sans font-semibold" id="product-one-title">K. Accessories</h2>
-                    <div class="text-center text-yellow-500 text-sm">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <p class="text-slate-400 text-sm text-center "><span id="product-one-price">39.00</span>Tk</p>
                 </div>
 
                 <!-- product card 2 -->
 
-                <div class="card bg-base-100 shadow-md rounded-md w-56" onclick="productTwoPriceAndTitle()">
-                    <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
-                        <figure><img src="./images/prod2.png" alt="" /></figure>
+                
+                <div>
+                    <div class="card bg-base-100 shadow-md rounded-md w-56" onclick="productPriceAndTitle(this)">
+                        <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
+                            <figure><img src="./images/prod2.png" alt="" /></figure>
+                        </div>
+                        <h2 class="text-center mt-2 font-sans font-semibold">K.Accessories</h2>
+                        <div class="text-center text-yellow-500 text-sm">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+    
+                        <p class="text-slate-400 text-sm text-center pb-2 "><span>25.00</span>Tk</p>
                     </div>
-                    <h2 class="text-center mt-2 font-sans font-semibold">K.Accessories</h2>
-                    <div class="text-center text-yellow-500 text-sm">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p class="text-slate-400 text-sm text-center"><span>25.00</span>Tk</p>
                 </div>
 
                 <!-- product 3 -->
-                <div class="card bg-base-100 shadow-md rounded-md w-56" onclick="productThreePriceAndTitle()">
-                    <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
-                        <figure><img src="./images/prod3.png" alt="" /></figure>
+                <div>
+                    <div class="card bg-base-100 shadow-md rounded-md w-56" onclick="productPriceAndTitle(this)">
+                        <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
+                            <figure><img src="./images/prod3.png" alt="" /></figure>
+                        </div>
+                        <h2 class="text-center mt-2 font-sans font-semibold">Home Cooker</h2>
+                        <div class="text-center text-yellow-500 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+    
+                        <p class="text-slate-400 text-sm text-center pb-2 "><span>49.00</span>Tk</p>
                     </div>
-                    <h2 class="text-center mt-2 font-sans font-semibold">Home Cooker</h2>
-                    <div class="text-center text-yellow-500 text-sm">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p class="text-slate-400 text-sm text-center"><span>49.00</span>Tk</p>
                 </div>
-            </div>
+                        <!-- product card 4 -->
+                        <div>
+                            <div class="card bg-base-100 shadow-md rounded-md w-56" onclick="productPriceAndTitle(this)">
+                                <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
+                                    <figure><img src="./images/prod4.png" alt="Shoes" /></figure>
+                                </div>
+                                <h2 class="text-center mt-2 font-sans font-semibold">Sports Back Cap</h2>
+                                <div class="text-center text-yellow-500 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+            
+                                <p class="text-slate-400 text-sm text-center pb-2 "><span>49.00</span>Tk</p>
+                            </div>
+                        </div>
+        
+                        <!-- product card 5 -->
+        
+                        <div>
+                            <div class="card bg-base-100 shadow-md rounded-md w-56"  onclick="productPriceAndTitle(this)">
+                                <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
+                                    <figure><img src="./images/prod5.png" alt="" /></figure>
+                                </div>
+                                <h2 class="text-center mt-2 font-sans font-semibold">Full Jersey Set</h2>
+                                <div class="text-center text-yellow-500 text-sm">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+            
+                                <p class="text-slate-400 text-sm text-center pb-2 "><span>69.00</span>Tk</p>
+                            </div>
+                        </div>
+        
+                        <!-- product 5 -->
+                        <div>
+                            <div class="card bg-base-100 shadow-md rounded-md w-56"  onclick="productPriceAndTitle(this)">
+                                <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
+                                    <figure><img src="./images/prod6.png" alt="" /></figure>
+                                </div>
+                                <h2 class="text-center mt-2 font-sans font-semibold">Sports cates</h2>
+                                <div class="text-center text-yellow-500 text-sm">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+            
+                                <p class="text-slate-400 text-sm text-center pb-2 "><span>159.00</span>Tk</p>
+                            </div>
+                        </div>
+                    </div>
 
 
             <!-- Add to Cart section -->
@@ -127,21 +195,21 @@
                     <h2 class="text-sm font-sans font-semibold mb-2">Have coupon?</h2>
                     <input type="text" class="border border-gray-200 w-36">
                     <button
-                        class=" bg-pink-500 rounded-md -ml-3 text-sm py-1 px-2 mb-2 text-center justify-center text-white font-sans">Apply</button>
+                        class=" bg-pink-500 rounded-md -ml-3 text-sm py-1 px-2 mb-2 text-center justify-center text-white font-sans"onclick="haveCuponButton()">Apply</button>
                 </div>
 
                 <!-- total amount div -->
                 <div class=" px-4 py-2 bg-white rounded-md">
-                    <p>
+                    <div id="selected-items" class="text-sm font-sans font-semibold text-black">
 
-                    </p>
+                    </div>
                     <hr class="mt-1">
                     <h2 class="text-base mt-1 font-sans font-semibold">Total Price: <span id="total-price"
-                            class="text-slate-400"></span></h2>
+                            class="text-slate-500">00.00</span>Tk</h2>
                     <h2 class="text-base mt-1 font-sans font-semibold">Discount Price: <span id="discount-price "
-                            class="text-slate-400"></span></h2>
+                            class="text-slate-500">00.00</span>Tk</h2>
                     <h2 class="text-base mt-1  mb-2 font-sans font-semibold">Total : <span id="total-amount"
-                            class="text-slate-400"></span></h2>
+                            class="text-slate-500">00.00</span>Tk</h2>
                     <hr>
 
 
@@ -157,13 +225,12 @@
                                 <h2 class="text-slate-400 text-base text-center mb-4">You Purchase the product</h2>
                                 <div class="text-center">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button class=" text-center text-white text-base bg-pink-500 px-2 py-2 rounded-md" onclick="goHomeButton()">Go Home</button>
+                                    <button class=" text-center text-white text-base bg-pink-500 px-2 py-2 rounded-md">Go Home</button>
                                 </div>
                             </div>
                         </form>
                     </dialog>
                 </div>
-
             </div>
 
         </section>
@@ -174,74 +241,79 @@
 
         <!--Second Product section  start -->
 
-        <div class="max-w-5xl mx-auto pt-10">
-            <h1 class="text-black font-sans font-semibold text-2xl mb-6">Kitchenware</h1>
+        <!-- <div class="max-w-3xl md:px-5 lg:max-w-5xl mx-auto pt-20 lg:pt-32">
+            <h1 class="text-black text-center md:text-left font-sans font-semibold text-2xl mb-6">Sportswear</h1>
 
         </div>
-        <section class="max-w-5xl mx-auto  flex pb-20">
+        <section class="max-w-5xl mx-auto md:px-5 md:flex">
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 justify-center gap-4">
-                <!-- product card 1 -->
-                <div class="card bg-base-100 shadow-md rounded-md w-56">
-                    <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
-                        <figure><img src="./images/prod4.png" alt="Shoes" /></figure>
+            <div class="grid  md:grid-cols-2 lg:grid-cols-3 justify-center gap-4">
+                 
+                <div>
+                    <div class="card bg-base-100 shadow-md rounded-md w-56" onclick="productPriceAndTitle(this)">
+                        <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
+                            <figure><img src="./images/prod4.png" alt="Shoes" /></figure>
+                        </div>
+                        <h2 class="text-center mt-2 font-sans font-semibold">Sports Back Cap</h2>
+                        <div class="text-center text-yellow-500 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+    
+                        <p class="text-slate-400 text-sm text-center pb-2 "><span>49.00</span>Tk</p>
                     </div>
-                    <h2 class="text-center mt-2 font-sans font-semibold">Sports Back Cap</h2>
-                    <div class="text-center text-yellow-500 text-sm">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p class="text-slate-400 text-sm text-center pb-2 "><span>49.00</span>Tk</p>
                 </div>
 
-                <!-- product card 2 -->
 
-                <div class="card bg-base-100 shadow-md rounded-md w-56">
-                    <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
-                        <figure><img src="./images/prod5.png" alt="" /></figure>
+                <div>
+                    <div class="card bg-base-100 shadow-md rounded-md w-56"  onclick="productPriceAndTitle(this)">
+                        <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
+                            <figure><img src="./images/prod5.png" alt="" /></figure>
+                        </div>
+                        <h2 class="text-center mt-2 font-sans font-semibold">Full Jersey Set</h2>
+                        <div class="text-center text-yellow-500 text-sm">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+    
+                        <p class="text-slate-400 text-sm text-center pb-2 "><span>69.00</span>Tk</p>
                     </div>
-                    <h2 class="text-center mt-2 font-sans font-semibold">Full Jersey Set</h2>
-                    <div class="text-center text-yellow-500 text-sm">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p class="text-slate-400 text-sm text-center pb-2 "><span>69.00</span>Tk</p>
                 </div>
 
-                <!-- product 3 -->
-                <div class="card bg-base-100 shadow-md rounded-md w-56">
-                    <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
-                        <figure><img src="./images/prod6.png" alt="" /></figure>
+               
+                <div>
+                    <div class="card bg-base-100 shadow-md rounded-md w-56"  onclick="productPriceAndTitle(this)">
+                        <div class="bg-slate-100 mx-6 mt-6 p-4 w-44 h-40">
+                            <figure><img src="./images/prod6.png" alt="" /></figure>
+                        </div>
+                        <h2 class="text-center mt-2 font-sans font-semibold">Sports cates</h2>
+                        <div class="text-center text-yellow-500 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+    
+                        <p class="text-slate-400 text-sm text-center pb-2 "><span>159.00</span>Tk</p>
                     </div>
-                    <h2 class="text-center mt-2 font-sans font-semibold">Sports cates</h2>
-                    <div class="text-center text-yellow-500 text-sm">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-
-                    <p class="text-slate-400 text-sm text-center pb-2 "><span>159.00</span>Tk</p>
                 </div>
             </div>
 
 
-            <!-- Add to Cart section -->
+         
 
             <div class="ml-10">
 
             </div>
 
-        </section>
+        </section> -->
 
 
         <!-- product section end -->
