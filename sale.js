@@ -1,4 +1,11 @@
 let total=0;
+const applyCuponButton=document.getElementById('apply-button');
+const makePurchaseButton=document.getElementById('make-purchase');
+
+applyCuponButton.disabled=true;
+applyCuponButton.style.backgroundColor='#ccc';
+makePurchaseButton.disabled=true;
+makePurchaseButton.style.backgroundColor='#ccc';
 
 function productPriceAndTitle(target){
     const selectedProductItems=document.getElementById('selected-items');
@@ -13,20 +20,47 @@ function productPriceAndTitle(target){
     const price=productPrice.innerText;
     total=parseFloat(total)+parseFloat(price);
     document.getElementById("total-price").innerText=total;
+
+    if(total===0){
+        makePurchaseButton.disabled =true;
+        makePurchaseButton.style.backgroundColor='#ccc';
+    }
+    else{
+        makePurchaseButton.disabled=false;
+        makePurchaseButton.style.backgroundColor='#ec4899';
+    }
+    if(total>=200){
+        applyCuponButton.disabled=false;
+        applyCuponButton.style.backgroundColor='#ec4899';
+    }
+    else{
+        applyCuponButton.disabled=true;
+        applyCuponButton.style.backgroundColor='#ccc';
+    }
 }
 
 // calculate Discount  amount
 
 function haveCuponButton(){
-    console.log('added');
-}
 
-// get field amount
-function getInputFieldAmount(id) {
-    const inputFieldAmount = document.getElementById(id);
-    const inputAmount = inputFieldAmount.value;
-    const inputPrice = parseFloat(inputAmount);
-    return inputPrice;
+    const discountCuponFeildValue=document.getElementById('cupon-field-value');
+    const discountCuponFieldTextValue=discountCuponFeildValue.value;
+
+    const totalPriceTextValue=document.getElementById('total-price');
+    const totalPriceValue=totalPriceTextValue.innerText;
+
+    const calculateDiscountAmount=totalPriceValue*0.2;
+    const totalAfterDiscount=totalPriceValue-calculateDiscountAmount;
+
+    if(discountCuponFieldTextValue==='SELL200'){
+        setInputFieldAmount('discount-price',calculateDiscountAmount)
+        setInputFieldAmount('total-amount',totalAfterDiscount)
+
+    }
+    else{
+        alert('You have enter a wrong cupon code');
+    }
+
 }
 
 // set field amount
