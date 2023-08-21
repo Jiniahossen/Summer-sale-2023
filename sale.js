@@ -51,11 +51,13 @@ function haveCuponButton() {
     const totalPriceValue = totalPriceTextValue.innerText;
 
     const calculateDiscountAmount = totalPriceValue * 0.2;
+    const calculateDiscountAmountFormateNumber=calculateDiscountAmount.toFixed(2);
     const totalAfterDiscount = totalPriceValue - calculateDiscountAmount;
+    const totalAfterDiscountFormateNumber=totalAfterDiscount.toFixed(2);
 
     if (discountCuponFieldTextValue === 'SELL200') {
-        setInputFieldAmount('discount-price', calculateDiscountAmount)
-        setInputFieldAmount('total-amount', totalAfterDiscount)
+        setInputFieldAmount('discount-price', calculateDiscountAmountFormateNumber)
+        setInputFieldAmount('total-amount', totalAfterDiscountFormateNumber)
 
     }
     else {
