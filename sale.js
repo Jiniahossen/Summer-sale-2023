@@ -19,7 +19,8 @@ function productPriceAndTitle(target){
     const productPrice=target.childNodes[7].childNodes[0];
     const price=productPrice.innerText;
     total=parseFloat(total)+parseFloat(price);
-    document.getElementById("total-price").innerText=total;
+    const formateNumber=total.toFixed(2);
+    document.getElementById("total-price").innerText=formateNumber;
 
     if(total===0){
         makePurchaseButton.disabled =true;
@@ -61,6 +62,12 @@ function haveCuponButton(){
         alert('You have enter a wrong cupon code');
     }
 
+}
+
+
+// Go home button
+function goHomeButton(){
+    
 }
 
 // set field amount
