@@ -67,7 +67,18 @@ function haveCuponButton(){
 
 // Go home button
 function goHomeButton(){
-    
+    const number=0;
+    total=number.toFixed(2);
+   const totalPrice=number.toFixed(2);
+   const DiscountPrice=number.toFixed(2);
+   const totalAmount=number.toFixed(2);
+
+   const selectedProductsItem=document.getElementById('selected-items');
+   selectedProductsItem.innerHTML='';
+
+    setInputFieldAmount('total-price',totalPrice);
+    setInputFieldAmount('discount-price',DiscountPrice);
+    setInputFieldAmount('total-amount',totalAmount);
 }
 
 // set field amount

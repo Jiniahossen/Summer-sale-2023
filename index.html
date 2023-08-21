@@ -35,7 +35,7 @@
 
     <header class="min-h-min" id="header">
         <section class="grid grid-rows-1 max-w-xl md:grid-cols-2 lg:max-w-2xl mx-auto text-center justify-center pt-20">
-            <div class="text-center">
+            <div class="text-center pt-10">
                 <h2 class="text-xl font-sans font-semibold">---SALE FEVER---</h2>
                 <h1 class="text-2xl lg:text-3xl mt-6 font-sans font-bold">Purchase TK 200 or<br>above & get <span
                         class="text-pink-500 text-3xl font-sans font-bold">20%
@@ -281,30 +281,32 @@
                     </div>
                     <hr class="mt-1">
                     <h2 class="text-base mt-1 font-sans font-semibold">Total Price: <span id="total-price"
-                            class="text-slate-500">00.00</span>Tk</h2>
+                            class="text-slate-500">0.00</span>Tk</h2>
                     <h2 class="text-base mt-1 font-sans font-semibold">Discount Price: <span id="discount-price"
-                            class="text-slate-500">00.00</span>Tk</h2>
+                            class="text-slate-500">0.00</span>Tk</h2>
                     <h2 class="text-base mt-1  mb-2 font-sans font-semibold">Total : <span id="total-amount"
-                            class="text-slate-500">00.00</span>Tk</h2>
+                            class="text-slate-500">0.00</span>Tk</h2>
                     <hr>
 
-                    <!-- Open the modal using ID.showModal() method -->
-                    <button
-                        class="bg-pink-500 rounded-md text-sm py-2 px-2 mt-2 text-center justify-center text-white font-sans w-full "
-                        onclick="my_modal_5.showModal()" id="make-purchase">Make Purchase</button>
-                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-                        <form method="dialog" class="modal-box">
-                            <div class="text-center">
-                               <div  class="mx-auto"><img src="./images/congo.png" alt="" class="mx-auto"></div>
-                                <p class="pt-4 pb-2 text-xl font-sans font-bold">Congratulations!</p>
-                                <h2 class="text-slate-400 text-base text-center mb-4">You Purchase the product</h2>
-                                <div class="text-center">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class=" text-center text-white text-base bg-pink-500 px-2 py-2 rounded-md" onclick="goHomeButton()">Go Home</button>
-                                </div>
-                            </div>
-                        </form>
-                    </dialog>
+                   <div>
+                     <!-- Open the modal using ID.showModal() method -->
+                     <button
+                     class="bg-pink-500 rounded-md text-sm py-2 px-2 mt-2 text-center justify-center text-white font-sans w-full "
+                     onclick="my_modal_5.showModal()" id="make-purchase">Make Purchase</button>
+                 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                     <form method="dialog" class="modal-box">
+                         <div class="text-center">
+                            <div  class="mx-auto"><img src="./images/congo.png" alt="" class="mx-auto"></div>
+                             <p class="pt-4 pb-2 text-xl font-sans font-bold">Congratulations!</p>
+                             <h2 class="text-slate-400 text-base text-center mb-4">You Purchase the product</h2>
+                             <div class="text-center">
+                                 <!-- if there is a button in form, it will close the modal -->
+                                 <button class=" text-center text-white text-base bg-pink-500 px-2 py-2 rounded-md" onclick="goHomeButton()">Go Home</button>
+                             </div>
+                         </div>
+                     </form>
+                 </dialog>
+                   </div>
                 </div>
             </div>
 
